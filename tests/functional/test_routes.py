@@ -36,7 +36,7 @@ def test_get_recipe(testing_client):
 
 def test_update_recipe(testing_client):
 
-    response = testing_client.put('/1', json={'name': 'recipe1', 'ingredients': 'ingredient1', 'steps': 'step1', 'rating': 1, 'favorite': False})
+    response = testing_client.put('/1', json={'name': 'recipe', 'ingredients': 'ingredient', 'steps': 'step', 'rating': 1, 'favorite': False})
     assert response.status_code == 200
 
 def test_delete_recipe(testing_client):
