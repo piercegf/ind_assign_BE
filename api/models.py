@@ -4,9 +4,9 @@ import string, random
 
 class Recipe(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(32), nullable=False)
-    ingredients = db.Column(db.String(500), nullable=False)
-    steps = db.Column(db.String(500), nullable=False)
+    name = db.Column(db.String(25), nullable=False)
+    ingredients = db.Column(db.String(250), nullable=False)
+    steps = db.Column(db.String(250, nullable=False)
     rating = db.Column(db.Integer, nullable=False)
     favorite = db.Column(db.Boolean, nullable=False)
 
